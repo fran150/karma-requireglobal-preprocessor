@@ -1,0 +1,8 @@
+{
+  "name": "karma-requireglobal-preprocessor",
+  "version": "0.0.0",
+  "description": "Converts configuration files that set the global 'require' object to ones that call requirejs.config(...)",
+  "main": "index.js",
+  "author": "Steve Sanderson",
+  "license": "MIT"
+}
