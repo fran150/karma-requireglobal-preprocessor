@@ -1,16 +1,16 @@
-function createRequireGlobalPreprocessor() {
+function createRequireGlobalQuarkPreprocessor() {
     return function(content, file, done) {
         var result = [
-            '(function () { ',
-            '    var require = { paths: {}, shim: {} };',
+            'requireConfig = (function (require) { ',
+            '',
             content,
-            '    requirejs.config(require);',
-            '})();'
+            '    return require;',
+            '})(requireConfig);'
         ];
         done(result.join('\n'));
     }
 }
 
 module.exports = {
-    'preprocessor:requireglobal': ['factory', createRequireGlobalPreprocessor]
+    'preprocessor:requireglobal': ['factory', createRequireGlobalQuarkPreprocessor]
 };

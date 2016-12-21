@@ -1,8 +1,8 @@
 {
-  "name": "karma-requireglobal-preprocessor",
+  "name": "karma-requireglobalquark-preprocessor",
   "version": "0.0.0",
-  "description": "Converts configuration files that set the global 'require' object to ones that call requirejs.config(...)",
+  "description": "Converts configuration files that set the global 'require' object to ones that stacks config in requireConf",
   "main": "index.js",
-  "author": "Steve Sanderson",
+  "author": "Francisco Lopez",
   "license": "MIT"
 }
