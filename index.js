@@ -12,5 +12,5 @@ function createRequireGlobalQuarkPreprocessor() {
 }
 
 module.exports = {
-    'preprocessor:requireglobal': ['factory', createRequireGlobalQuarkPreprocessor]
+    'preprocessor:requireglobalquark': ['factory', createRequireGlobalQuarkPreprocessor]
 };
